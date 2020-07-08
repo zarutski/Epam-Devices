@@ -9,13 +9,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Device> master = Util.findDevices("Oven", "CAPACITY", "33");
-        for (Device m : master) {
+        List<Device> devices = Util.findDevices("Oven", "CAPACITY", "33");
+        for (Device m : devices) {
             System.out.println(m);
         }
 
-        master = Util.findDevices("VacuumCleaner", "WAND_TYPE", "all-in-one");
-        for (Device m : master) {
+        devices = Util.findDevices("VacuumCleaner", "WAND_TYPE", "all-in-one");
+        for (Device m : devices) {
             System.out.println(m);
         }
     }
